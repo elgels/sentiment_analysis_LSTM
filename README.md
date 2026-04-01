@@ -166,7 +166,7 @@ Python • PyTorch • torchtext • GloVe • NumPy • Matplotlib • Seaborn 
 │   ├── loss_plot.png
 │   ├── accuracy_plot.png
 │   ├── confusion_matrix.png
-│   └── attention_heatmap.png
+│   └── attention_per_token.png
 └── README.md
 </pre>
 
