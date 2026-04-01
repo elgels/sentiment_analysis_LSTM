@@ -161,7 +161,6 @@ Python • PyTorch • torchtext • GloVe • NumPy • Matplotlib • Seaborn 
 <h2>Repository Structure</h2>
 
 <pre>
-├── rnn_baseline.ipynb
 ├── lstm_attention_model.ipynb
 ├── figures/
 │   ├── loss_plot.png
