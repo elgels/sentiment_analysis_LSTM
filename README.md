@@ -163,10 +163,10 @@ Python • PyTorch • torchtext • GloVe • NumPy • Matplotlib • Seaborn 
 <pre>
 ├── lstm_attention_model.ipynb
 ├── figures/
-│   ├── loss_plot.png
 │   ├── accuracy_plot.png
+│   ├── attention_per_token.png  
 │   ├── confusion_matrix.png
-│   └── attention_per_token.png
+│   └── loss_plot.png  
 └── README.md
 </pre>
 
