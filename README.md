@@ -122,62 +122,7 @@ Neutral sentences were the most frequently misclassified.
   <li>This highlights the limitations of recurrent models in capturing nuanced sentiment</li>
 </ul>
 
-<hr>
 
-
-<h2>Error Analysis</h2>
-
-<p>
-To better understand model performance, misclassified examples were analyzed using both confusion matrix results and attention visualizations.
-</p>
-
-<h3>Class-Level Patterns</h3>
-
-<p>
-The confusion matrix shows that <strong>neutral sentences were the most frequently misclassified</strong>. 
-This reflects the inherent difficulty of neutral sentiment, which often overlaps with both positive and negative language.
-</p>
-
-<ul>
-  <li>Neutral sentences frequently contain mixed or subtle sentiment</li>
-  <li>Short phrases lack sufficient context for clear classification</li>
-  <li>Ambiguity increases overlap between classes</li>
-</ul>
-
-<h3>Ambiguous and Subjective Labels</h3>
-
-<p>
-Several misclassified examples suggest that some errors may stem from ambiguity in the dataset labels rather than clear model failure.
-</p>
-
-<ul>
-  <li><em>"Hilariously inept and ridiculous."</em> was labeled as positive but predicted as negative</li>
-  <li><em>"Barely gets off the ground"</em> was labeled as neutral but predicted as negative</li>
-</ul>
-
-<p>
-In these cases, the model’s predictions are arguably reasonable given the wording of the sentences. 
-This highlights the subjectivity of sentiment analysis and the challenges of evaluating models on nuanced or context-dependent text.
-</p>
-
-<h3>Context-Dependent Word Interpretation</h3>
-
-<p>
-Some errors arise from words whose sentiment depends heavily on context. For example:
-</p>
-
-<ul>
-  <li><em>"creepy authentic and dark"</em> was labeled as neutral, while the model predicted positive</li>
-</ul>
-
-<p>
-The attention mechanism focused primarily on the word <strong>"dark"</strong>, which can carry different meanings depending on context 
-(e.g., negative vs stylistically positive in film descriptions).
-</p>
-
-<p>
-This demonstrates that while pretrained embeddings capture general semantic meaning, the model may struggle to fully integrate context across the entire sentence.
-</p>
 
 <h3>Attention Behavior</h3>
 
@@ -194,12 +139,7 @@ Attention visualizations show that the model often focuses on a small number of 
 This behavior can lead to errors when sentiment depends on interactions between words rather than isolated terms.
 </p>
 
-<h3>Key Insight</h3>
-
-<p>
-These findings highlight that model performance is influenced not only by architecture but also by dataset ambiguity and the inherent complexity of natural language. 
-Quantitative metrics such as accuracy should therefore be interpreted alongside qualitative analysis.
-</p>
+<hr>
 <h2>Future Improvements</h2>
 
 <ul>
